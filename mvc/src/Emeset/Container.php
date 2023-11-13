@@ -31,15 +31,16 @@ class Container
     {
         $this->config = $config;
     }
-
     public function response()
     {
         return new \Emeset\Response();
     }
-
     public function request()
     {
         return new \Emeset\Request();
     }
-
+    public function alumnes()
+    {
+        return new \Emeset\Alumnes($this->sql);
+    }
 }

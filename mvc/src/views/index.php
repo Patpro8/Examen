@@ -47,25 +47,21 @@
             <span class="visually-hidden">Sid</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Prev</span>
         </button>
     </div>
 </div>
-
   <div id="cookie-notice" class="alert alert-dark text-center mb-0" role="alert">
-    🍪 Este sitio web utiliza cookies para mejorar la experiencia del usuario.
+    🍪 Aquest lloc web utilitza cookise per millorar la experiencia del usuari.
     <a href="https://www.cookiesandyou.com/" target="blank">cookies</a>
     <button type="button" id="accept-cookies" class="btn btn-primary btn-sm ms-3 accept-cookies">Aceptar</button>
     <a href="#" id="manage-cookies" class="manage-cookies">No Acepto</a>
   </div>
-
   <script src="Assets/Scripts/appcokies.js"></script>
   <script src="Assets/Scripts/app.js"></script>
-
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <?php include("head.php"); ?>
+  <?php include("footer.php"); ?>
 </body>
-
 </html>

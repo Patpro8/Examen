@@ -1,5 +1,4 @@
 <?php
-
 $config = [
     "db" => [
         "user" => "root",
@@ -8,8 +7,6 @@ $config = [
         "host" => "localhost"
     ],
 ];
-
 include "../src/models/Users.php"; 
 include "../src/models/Db.php";
-
-
+include "../src/models/alumnes.php";

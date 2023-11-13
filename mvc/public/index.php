@@ -19,7 +19,7 @@
  $request = new \Emeset\Request();
  $response = new \Emeset\Response();
  $container = new \Emeset\Container($config);
-
+ $container = new \Emeset\Container($config);
  /* 
   * Aquesta és la part que fa que funcioni el Front Controller.
   * Si no hi ha cap paràmetre, carreguem la pàgina d'inici.
@@ -34,11 +34,12 @@
  /* Front Controller, aquí es decideix quina acció s'executa */
  if($r == "") {
      $response = ctrlIndex($request, $response, $container);
- } elseif($r == "json") {
-  $response = ctrlJson($request, $response, $container);
+ } elseif($r == "alumnes") {
+  $response == ctrlAlumnes($request, $response, $container);
+} elseif($r == "registre") {
+  $response == ctrlRegistre($request, $response, $container);
 } else {
      echo "No existeix la ruta";
  }
-
  /* Enviem la resposta al client. */
  $response->response();

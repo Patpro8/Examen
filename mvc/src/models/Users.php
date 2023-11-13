@@ -22,13 +22,6 @@ class Users {
     }
 
     public function addUser($nom, $cognoms, $tel, $email, $tarjeta, $rol, $contrasenya) {
-        $stm = $this->sql->prepare('SELECT MAX(id) as max_id FROM usuari');
-        $stm->execute();
-        $result = $stm->fetch(\PDO::FETCH_ASSOC);
-        $maxId = $result['max_id'];
-    
-        $id = $maxId + 1;
-    
         $stm = $this->sql->prepare('INSERT INTO usuari (id, Nom, Cognoms, Tel, Email, tarjeta, rol, Contrasenya) 
             VALUES (:id, :nom, :cognoms, :tel, :email, :tarjeta, :rol, :contrasenya);');
         
@@ -43,7 +36,6 @@ class Users {
             ':contrasenya' => $contrasenya,
         ]);
     }
-
     public function login($user, $pass){
         $stm = $this->sql->prepare('SELECT id, Nom, Contrasenya FROM usuari WHERE Nom = :user');
         $stm->execute(['user' => $user]); 
