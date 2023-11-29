@@ -7,6 +7,8 @@
  include "../src/config.php";
  include "../src/controllers/ctrlIndex.php";
  include "../src/controllers/ctrlJson.php";
+ include "../src/controllers/cregistre.php";
+ include "../src/controllers/ctrlalumnes.php";
 
 /**
   * Carreguem les classes del Framework Emeset
@@ -35,9 +37,9 @@
  if($r == "") {
      $response = ctrlIndex($request, $response, $container);
  } elseif($r == "alumnes") {
-  $response == ctrlAlumnes($request, $response, $container);
+  $response == ctrlalumnes($request, $response, $container);
 } elseif($r == "registre") {
-  $response == ctrlRegistre($request, $response, $container);
+  $response == cregistre($request, $response, $container);
 } else {
      echo "No existeix la ruta";
  }

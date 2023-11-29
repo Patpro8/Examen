@@ -4,7 +4,7 @@ $config = [
         "user" => "root",
         "pass" => "",
         "db" => "examen",
-        "host" => "localhost"
+        "host" => "localhost: 3307"
     ],
 ];
 include "../src/models/Users.php"; 

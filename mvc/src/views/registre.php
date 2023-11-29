@@ -15,7 +15,7 @@
             <div class="card text-white bg-info mb-3">
                 <div class="card-body">
                     <h5 class="card-title">Registre</h5>
-                    <form action="index.php?r=alumnes" method="POST">
+                    <form action="?r=alumnes" method="POST">
     <div class="mb-3">
         <label for="nom" class="form-label">Nom:</label>
         <input type="text" id="nom" name="nom" class="form-control" required>

@@ -1,5 +1,5 @@
 <?php
-function ctrlAlumnes($request, $response, $container) {
+function ctrlalumnes($request, $response, $container) {
     $userModel = $container->Alumnes();
     $nom = $request->get(INPUT_POST, "nom");    
     $cognoms = $request->get(INPUT_POST, "cognoms");    
@@ -9,5 +9,6 @@ function ctrlAlumnes($request, $response, $container) {
     $ciutat = $request->get(INPUT_POST, "ciutat");    
     $codi_postal = $request->get(INPUT_POST, "codi_postal");    
     $userModel->addalumnes($nom, $cognoms, $data_de_naixement, $carrer, $numero, $ciutat, $codi_postal);
+    $response->setTemplate("alumnes.php");
     return $response;
 }
